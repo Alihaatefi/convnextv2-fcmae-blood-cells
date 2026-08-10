@@ -1,0 +1,26 @@
+{
+  "mean-rgb": {
+    "test_accuracy": 0.7026666666666667,
+    "n_features": 3,
+    "description": "average colour of the whole image (3 dims)"
+  },
+  "corner-rgb": {
+    "test_accuracy": 0.4706666666666667,
+    "n_features": 12,
+    "description": "average colour of the four corners -- background only (12 dims)"
+  },
+  "hist-rgb": {
+    "test_accuracy": 0.944,
+    "n_features": 48,
+    "description": "16-bin per-channel colour histogram (48 dims)"
+  },
+  "thumb-8x8": {
+    "test_accuracy": 0.88,
+    "n_features": 192,
+    "description": "image crushed to 8x8 (192 dims)"
+  },
+  "_permutation_control": {
+    "test_accuracy": 0.2,
+    "description": "hist-rgb with shuffled training labels; must land at chance"
+  }
+}

@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+      basophil     0.8639    0.9621    0.9104       132
+  erythroblast     0.9801    0.9308    0.9548       159
+      monocyte     0.9379    0.8553    0.8947       159
+    myeloblast     0.9281    1.0000    0.9627       142
+seg_neutrophil     0.9610    0.9367    0.9487       158
+
+      accuracy                         0.9347       750
+     macro avg     0.9342    0.9370    0.9343       750
+  weighted avg     0.9369    0.9347    0.9345       750
