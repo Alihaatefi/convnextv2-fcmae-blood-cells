@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you refer to this work, please cite it as below."
+title: "ConvNeXt V2 + FCMAE from scratch, on blood cell microscopy"
+abstract: >-
+  A from-scratch PyTorch implementation of the ConvNeXt V2 encoder and a masked
+  autoencoder pre-training pipeline, applied to five-class blood cell
+  classification. Originally a graduate course project reporting 94.8% test
+  accuracy, it was re-opened and re-evaluated with the controls the original
+  submission never ran: a from-scratch baseline, a linear probe, a random-feature
+  control, a label-budget sweep, and three seeds throughout. The controls show
+  that the self-supervised pre-training is a wash at full label budgets, that the
+  pre-trained encoder is a worse frozen feature extractor than a randomly
+  initialised one, and that a 48-dimensional colour histogram with logistic
+  regression reaches 94.4% on the same test set — matching the deep model without
+  any morphological understanding.
+type: software
+authors:
+  - family-names: Hatefi
+    given-names: Ali
+    affiliation: "Amirkabir University of Technology (Tehran Polytechnic)"
+license: MIT
+repository-code: "https://github.com/Alihaatefi/convnextv2-fcmae-blood-cells"
+date-released: "2026-08-09"
+keywords:
+  - deep learning
+  - self-supervised learning
+  - masked autoencoder
+  - ConvNeXt
+  - medical image analysis
+  - shortcut learning
+  - reproducibility
+references:
+  - type: article
+    title: "ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders"
+    authors:
+      - family-names: Woo
+        given-names: Sanghyun
+      - family-names: Debnath
+        given-names: Shoubhik
+      - family-names: Hu
+        given-names: Ronghang
+      - family-names: Chen
+        given-names: Xinlei
+      - family-names: Liu
+        given-names: Zhuang
+      - family-names: Kweon
+        given-names: In So
+      - family-names: Xie
+        given-names: Saining
+    year: 2023
+    url: "https://arxiv.org/abs/2301.00808"
